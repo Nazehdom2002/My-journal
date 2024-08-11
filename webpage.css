@@ -10,12 +10,7 @@ header {
     padding: 20px;
     text-align: center;
 }
-
-h1 {
-    color: #ff6347; /* Bright tomato color for main headings */
-}
-
-button {
+\button {
     background-color: #4caf50; /* Motivating green for buttons */
     color: #fff; /* White text on buttons */
     border: none;
