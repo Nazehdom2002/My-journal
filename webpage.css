@@ -1,20 +1,40 @@
 body {
-    background: linear-gradient(to bottom, #1a2a4e, #243b55);
-    font-family: 'Times New Roman', Times, serif;
-    color: #fff;
-    margin: 0;
-    padding: 20px;
+    background-color: #f0f8ff; /* Light, refreshing background color */
+    color: #333; /* Dark text for good contrast */
+    font-family: Arial, sans-serif; /* Clean and modern font */
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+header {
+    background-color: #ff6f61; /* Vibrant coral color for header */
+    color: #fff; /* White text on the header */
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
+    text-align: center;
 }
 
+h1 {
+    color: #ff6347; /* Bright tomato color for main headings */
+}
+
+button {
+    background-color: #4caf50; /* Motivating green for buttons */
+    color: #fff; /* White text on buttons */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners for a modern look */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green when hovering over buttons */
+}
+
+footer {
+    background-color: #ff6f61; /* Matching footer color with header */
+    color: #fff; /* White text in footer */
+    padding: 10px;
+    text-align: center;
+}
 h2 {
     font-size: 22px;
     text-transform: capitalize;
