@@ -5,16 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Effective Journaling</title>
     <link rel="stylesheet" href="webpage.css">
+    <style>
+        body {
+            background-color: #f0f8ff; /* Light, refreshing background color */
+            color: #333; /* Dark text for good contrast */
+            font-family: Arial, sans-serif; /* Clean and modern font */
+        }
+
+        header {
+            background-color: #ff6f61; /* Vibrant coral color for header */
+            color: #fff; /* White text on the header */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            background-size: cover; /* Ensures the background image covers the section */
+            background-position: center; /* Center-aligns the background image */
+            background-repeat: no-repeat; /* Prevents image repetition */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners for a modern look */
+            margin-bottom: 20px; /* Spacing between sections */
+            color: #fff; /* White text for better readability on dark backgrounds */
+        }
+
+        .section.entry-chart {
+            background-image: url('entry-chart.png'); /* Chart image for Reason for Entry */
+        }
+
+        .section.exit-chart {
+            background-image: url('exit-chart.png'); /* Chart image for Reason for Exit */
+        }
+
+        .section.post-trade-chart {
+            background-image: url('post-trade-chart.png'); /* Chart image for Post Trade Analysis */
+        }
+
+        button {
+            background-color: #4caf50; /* Motivating green for buttons */
+            color: #fff; /* White text on buttons */
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px; /* Rounded corners for a modern look */
+        }
+
+        button:hover {
+            background-color: #45a049; /* Darker green when hovering over buttons */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #444;
+            color: #fff;
+        }
+
+        textarea, input[type="text"], input[type="number"], input[type="date"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-   <div class="container">
+    <header>
+        <h1>Effective Journaling</h1>
+    </header>
+
+    <div class="container">
         <!-- Reason for Entry Section -->
-        <div class="section">
+        <div class="section entry-chart">
             <h2>Reason for Entry</h2>
             <textarea rows="2" placeholder="Enter reason for entry..."></textarea>
-            <div class="upload">
-                <label>Chart: <input type="file"></label>
-            </div>
             <label>Risk Percentage: <input type="number" step="0.01" placeholder="Enter risk %"></label>
             <label>Lot Size: <input type="number" placeholder="Enter lot size"></label>
         </div>
@@ -60,12 +143,9 @@
         </div>
 
         <!-- Reason for Exit Section -->
-        <div class="section">
+        <div class="section exit-chart">
             <h2>Reason for Exit</h2>
             <textarea rows="2" placeholder="Enter reason for exit...">almost hit target, looked like might be reversing in the morning</textarea>
-            <div class="upload">
-                <label>Chart: <input type="file"></label>
-            </div>
             <label>Emotions: <input type="text" placeholder="Enter emotions..."></label>
             <label>Market Conditions: <input type="text" placeholder="Enter market conditions..."></label>
         </div>
@@ -85,12 +165,9 @@
         </div>
 
         <!-- Post Trade Analysis Section -->
-        <div class="section">
+        <div class="section post-trade-chart">
             <h2>Post Trade Analysis</h2>
             <textarea rows="4" placeholder="Enter post trade analysis..."></textarea>
-            <div class="upload">
-                <label>Chart: <input type="file"></label>
-            </div>
         </div>
 
         <!-- New Entry Button -->
@@ -109,6 +186,5 @@
         // Call the function when the page loads
         window.onload = calculateGainLoss;
     </script>
-    
-    </body>
+</body>
 </html>
